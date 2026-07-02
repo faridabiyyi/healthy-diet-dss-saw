@@ -1,0 +1,52 @@
+/* ===============================
+   DASHBOARD BUTTONS – DINAS KESEHATAN
+   =============================== */
+
+.dashboard-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-dashboard {
+    background: linear-gradient(135deg, #0f9d58, #2ecc71);
+    color: #ffffff;
+    padding: 14px 26px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.btn-dashboard:hover {
+    background: linear-gradient(135deg, #0c7c45, #27ae60);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.2);
+}
+
+/* Focus / active */
+.btn-dashboard:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .dashboard-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-dashboard {
+        width: 80%;
+        justify-content: center;
+    }
+}

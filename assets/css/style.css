@@ -1,0 +1,785 @@
+/* RESET DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+}
+
+/* ===============================
+   NAVBAR ATAS (HORIZONTAL)
+================================ */
+
+.navbar {
+    width: 100%;
+    background: #39ab94;
+    padding: 15px 30px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    margin-bottom: 40px;
+}
+
+/* BRAND */
+.brand {
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+/* MENU */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-menu li {
+    margin: 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    padding: 10px 16px;
+    background: rgba(255,255,255,0.2);
+    color: #ffffff;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+/* HOVER */
+.nav-menu a:hover {
+    background: #1e88e5;
+    transform: translateY(-2px);
+}
+
+/* LOGOUT */
+.nav-menu .logout {
+    background: #d32f2f;
+}
+
+.nav-menu .logout:hover {
+    background: #b71c1c;
+}
+
+/* ===============================
+   KONTEN TENGAH (DESKRIPSI SPK)
+================================ */
+
+.center-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.center-content h2 {
+    color: #1a237e;
+    margin-bottom: 10px;
+}
+
+.center-content h3 {
+    color: #39ab94;
+    margin-bottom: 20px;
+}
+
+.center-content p {
+    font-size: 17px;
+    line-height: 1.7;
+    color: #444;
+}
+
+/* ===============================
+   HALAMAN DATA MASYARAKAT
+================================ */
+
+/* JUDUL HALAMAN */
+h2 {
+    margin-bottom: 20px;
+    color: #1a237e;
+}
+
+/* TOMBOL NAVIGASI */
+.action-buttons {
+    margin-bottom: 20px;
+}
+
+.action-buttons a {
+    text-decoration: none;
+}
+
+.action-buttons button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+/* BACK */
+.btn-back {
+    background: #546e7a;
+    color: #fff;
+}
+
+.btn-back:hover {
+    background: #37474f;
+}
+
+/* TAMBAH DATA */
+.btn-add {
+    background: #2e7d32;
+    color: #fff;
+}
+
+.btn-add:hover {
+    background: #1b5e20;
+}
+
+/* FORM UPLOAD CSV */
+.form-upload {
+    margin-top:-50px;
+    background: #ffffff;
+    padding: 20px;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+    margin-bottom: 0px;
+}
+
+.form-upload input[type="file"] {
+    margin-bottom: 12px;
+}
+
+.form-upload button {
+    padding: 10px 16px;
+    background: #1e88e5;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.form-upload button:hover {
+    background: #1565c0;
+}
+
+/* ===============================
+   TABEL DATA (CENTER + SPACE)
+================================ */
+
+table {
+    width: 90%;
+    margin: 0 auto 40px auto;   /* TENGAH + RUANG BAWAH */
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* HEADER */
+table th {
+    background: #3949ab;
+    color: #ffffff;
+    padding: 12px;
+    text-align: center;
+}
+
+/* ISI */
+table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+
+/* ZEBRA STRIP */
+table tr:nth-child(even) {
+    background: #f5f7fa;
+}
+
+/* HOVER ROW */
+table tr:hover {
+    background: #e3f2fd;
+}
+
+/* LINK AKSI */
+table a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+table a:first-child {
+    color: #1e88e5;
+}
+
+table a:last-child {
+    color: #d32f2f;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+/* ===============================
+   HALAMAN PROSES SAW
+================================ */
+
+.saw-container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* JUDUL TABEL */
+.saw-container h3 {
+    margin: 30px 0 15px;
+    color: #1b5e20;
+    background: #e8f5e9;
+    padding: 12px 18px;
+    border-left: 6px solid #39ab94;
+    border-radius: 8px;
+}
+
+/* TABEL SAW */
+.saw-container table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    margin-bottom: 25px;
+}
+
+/* HEADER */
+.saw-container table th {
+    background: #39ab94;
+    color: #ffffff;
+    padding: 12px;
+    text-align: center;
+    font-size: 15px;
+}
+
+/* ISI */
+.saw-container table td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+    font-size: 14px;
+}
+
+/* ZEBRA */
+.saw-container table tr:nth-child(even) {
+    background: #f1f8f6;
+}
+
+/* HOVER */
+.saw-container table tr:hover {
+    background: #e0f2f1;
+}
+
+/* PESAN SELESAI */
+.saw-container b {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 18px;
+    background: #c8e6c9;
+    color: #1b5e20;
+    border-radius: 8px;
+    font-size: 15px;
+}
+/* ===============================
+   TOMBOL BACK PROSES SAW
+================================ */
+
+.saw-action {
+    margin-bottom: 25px;
+}
+
+.btn-back-dashboard {
+    display: inline-block;
+    padding: 10px 18px;
+    background: #546e7a;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-back-dashboard:hover {
+    background: #37474f;
+    transform: translateX(-4px);
+}
+/* ===============================
+   FORM TAMBAH DATA MASYARAKAT
+================================ */
+
+.form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    color: #1b5e20;
+    margin-bottom: 25px;
+}
+
+/* LABEL */
+.form-container label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: 500;
+    color: #2e7d32;
+}
+
+/* INPUT & SELECT */
+.form-container input,
+.form-container select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #a5d6a7;
+    margin-bottom: 18px;
+    outline: none;
+    font-size: 14px;
+}
+
+.form-container input:focus,
+.form-container select:focus {
+    border-color: #43a047;
+    box-shadow: 0 0 6px rgba(67,160,71,0.4);
+}
+
+/* TOMBOL */
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-simpan {
+    padding: 12px 28px;
+    background: #43a047;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-simpan:hover {
+    background: #2e7d32;
+}
+
+/* LINK KEMBALI */
+.btn-kembali {
+    text-decoration: none;
+    color: #546e7a;
+    font-weight: 500;
+}
+
+.btn-kembali:hover {
+    text-decoration: underline;
+}
+/* ===============================
+   HALAMAN GENERATE PENILAIAN
+================================ */
+
+.generate-container {
+    max-width: 95%;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.generate-container h3 {
+    text-align: center;
+    color: #1b5e20;
+    margin-bottom: 25px;
+}
+
+/* TABEL */
+.generate-container table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+}
+
+.generate-container th {
+    background: #66bb6a;
+    color: #ffffff;
+    padding: 12px;
+    text-align: center;
+}
+
+.generate-container td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.generate-container tr:nth-child(even) {
+    background: #f1f8e9;
+}
+
+.generate-container tr:hover {
+    background: #e8f5e9;
+}
+
+/* INFO SELESAI */
+.generate-info {
+    margin-top: 20px;
+    color: #2e7d32;
+    font-weight: 600;
+}
+
+/* TOMBOL BACK */
+.back-dashboard {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 26px;
+    background: #43a047;
+    color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.back-dashboard:hover {
+    background: #2e7d32;
+}
+/* ===============================
+   DASHBOARD BUTTONS – DINAS KESEHATAN
+   =============================== */
+
+.dashboard-buttons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.btn-dashboard {
+    background: linear-gradient(135deg, #0f9d58, #2ecc71);
+    color: #ffffff;
+    padding: 14px 26px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.btn-dashboard:hover {
+    background: linear-gradient(135deg, #0c7c45, #27ae60);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.2);
+}
+
+/* Focus / active */
+.btn-dashboard:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .dashboard-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-dashboard {
+        width: 80%;
+        justify-content: center;
+    }
+}
+/* ===============================
+   TOMBOL TAMBAH KRITERIA
+================================ */
+
+.btn-add {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    padding: 10px 18px;
+    background: #2e7d32;
+    color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.btn-add:hover {
+    background: #1b5e20;
+}
+/* ACTION BAR */
+.action-bar {
+    display: flex;
+    align-items: left;     /* KUNCI KESELARASAN */
+    gap: 15px;
+    margin: 20px 0 10px;
+}
+
+/* SAMAKAN SEMUA TOMBOL DI ACTION BAR */
+.action-bar a {
+    height: 34px;            /* KUNCI: TINGGI SAMA */
+    display: inline-flex;
+    align-items: center;
+    padding: 0 20px;         /* HORIZONTAL SAJA */
+    font-size: 15px;
+    line-height: 1;          /* HILANGKAN OFFSET TEKS */
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 500;
+}
+/* ===== CARD ===== */
+.card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    max-width: 500px;
+    margin: 40px auto;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* ===== TITLE ===== */
+.page-title {
+    margin-bottom: 10px;
+    color: #1b5e20;
+}
+
+.subtitle {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* ===== FORM ===== */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+.btn-tambah {
+    display: inline-block;
+    margin-bottom: 12px;
+    padding: 6px 12px;
+    background: #2e7d32;
+    color: white;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn-tambah:hover {
+    background: #1b5e20;
+}
+/* Button Tambah Sub Kriteria */
+.btn-add {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin: 10px 0 15px 0;
+    padding: 8px 14px;
+    background: #3f51b5;
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-add:hover {
+    background: #303f9f;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+/* KOLOM AKSI */
+.aksi{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+}
+
+/* BUTTON EDIT */
+.btn-edit{
+    background:#3498db;
+    color:white;
+    padding:8px 10px;
+    border-radius:6px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn-edit:hover{
+    background:#2980b9;
+}
+
+/* BUTTON HAPUS */
+.btn-hapus{
+    background:#e74c3c;
+    color:white;
+    padding:8px 10px;
+    border-radius:6px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.btn-hapus:hover{
+    background:#c0392b;
+}
+.btn-edit{
+    background:#3498db;
+    color:white !important;
+    padding:6px 12px;
+    border-radius:6px;
+    text-decoration:none;
+    font-size:14px;
+    margin-right:5px;
+    transition:.3s;
+}
+
+.btn-edit:hover{
+    background:#2980b9;
+}
+.btn-hapus{
+    background:#e74c3c;
+    color:white !important;
+    padding:6px 12px;
+    border-radius:6px;
+    text-decoration:none;
+    font-size:14px;
+    transition:.3s;
+}
+
+.btn-hapus:hover{
+    background:#c0392b;
+}
+.btn-hapus{
+    background:#e74c3c;
+    color:white;
+    padding:6px 12px;
+    border-radius:6px;
+    text-decoration:none;
+    font-size:14px;
+    transition:.3s;
+}
+
+.btn-hapus:hover{
+    background:#c0392b;
+}
+.btn-edit:hover,
+.btn-hapus:hover{
+    color:white !important;
+}
+.btn-add{
+    background: linear-gradient(135deg,#2ecc71,#27ae60);
+    color:white !important;
+    padding:10px 18px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:600;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    margin-bottom:20px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.15);
+}
+
+.btn-add:hover{
+    transform:translateY(-2px);
+}
+.btn-edit{
+    background:#3498db;
+    color:white !important;
+    padding:6px 12px;
+    border-radius:6px;
+    text-decoration:none;
+    margin-right:6px;
+    display:inline-flex;
+    align-items:center;
+    gap:5px;
+}
+
+.btn-edit:hover{
+    background:#2980b9;
+}
+.btn-hapus{
+    background:#e74c3c;
+    color:white !important;
+    padding:6px 12px;
+    border-radius:6px;
+    text-decoration:none;
+    display:inline-flex;
+    align-items:center;
+    gap:5px;
+}
+
+.btn-hapus:hover{
+    background:#c0392b;
+}
+.btn-edit i,
+.btn-hapus i,
+.btn-add i{
+    color:white !important;
+}
+.form-card{
+    max-width:500px;
+    margin:auto;
+    background:#fff;
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.form-card input{
+    width:100%;
+    padding:10px;
+    margin-top:6px;
+    margin-bottom:18px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+.form-card select{
+    width:100%;
+    padding:10px;
+    margin-top:6px;
+    margin-bottom:18px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
