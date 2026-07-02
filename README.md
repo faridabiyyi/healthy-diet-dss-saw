@@ -36,15 +36,15 @@ The application helps users obtain diet recommendations based on predefined crit
 
 ### Login Page
 
-*(Add your screenshot here)*
+![Login Page](screenshots/login.png)
 
 ### Dashboard
 
-*(Add your screenshot here)*
+![Dashboard](screenshots/dashboard.png)
 
 ### Recommendation Result
 
-*(Add your screenshot here)*
+![Recommendation Result](screenshots/recommendation.png)
 
 ---
 
